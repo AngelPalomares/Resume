@@ -1,0 +1,23 @@
+h1{
+    font-size: 165%;
+    font-weight: normal;
+    color: orange;
+    text-align: center;
+}
+
+header p span{
+    color: orangered;
+}
+
+.highlight{
+    background-color: palegreen;
+}
+
+p
+{
+    color: peru;
+}
+
+footer p{
+    color: plum;
+}
