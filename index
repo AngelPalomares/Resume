@@ -1,0 +1,109 @@
+html{
+    background-color: #DFCFBE;
+}
+.HeaderBox{
+    border-bottom: 2px solid black;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 87%;
+}
+
+header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+}
+
+.Professional-summary
+{
+    background-color: lightgray;
+}
+
+header h1{
+    margin: 0;
+    font-weight: normal;
+    font-size: 165%;
+}
+
+header p {
+    margin: 0%;
+}
+
+.container{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    box-sizing: border-box;
+}
+
+.main-area{
+    border-top: 3px solid black;
+    margin-bottom: 5px;
+}
+.main-area li{
+    float: left;
+    margin-right: 5%;
+}
+
+.border-down{
+    border-bottom: 3px solid black;
+}
+
+
+.Education
+{
+
+    margin-top: 70px;
+    background-color: lightgray;
+}
+
+.Group3
+{
+    float: middle;
+}
+
+/*Banner Overlay*/
+.image-banner{
+    position: relative;
+}
+
+.banner-description{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+}
+
+
+/* Site Navigation*/
+.site li
+{
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+.site ul{
+    margin: 0;
+    padding: 0;
+}
+
+.site{
+    margin-top: 20px;
+}
+
+.site a{
+    display: inline;
+    color: lightpink;
+    text-decoration: none;
+    padding: 10px 10px;
+    border: 3px solid snow;
+}
+
+.site a:hover{
+    background-color: snow;
+}
