@@ -14,7 +14,7 @@ html{
 
 .sidebar{
  width: 34%;
-    float: right;
+    float: left;
     background-color: #e5e9dc;
     padding-left: 40px;
     padding-right: 40px;
