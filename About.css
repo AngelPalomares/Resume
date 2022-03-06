@@ -11,3 +11,15 @@ html{
 
     box-sizing: border-box;
 }
+
+.sidebar{
+ width: 34%;
+    float: left;
+    background-color: #e5e9dc;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 85%;
+}
