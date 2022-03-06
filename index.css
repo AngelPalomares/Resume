@@ -2,7 +2,7 @@ html{
     background-color: #DFCFBE;
 }
 .HeaderBox{
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
 }
 
 body{
@@ -18,7 +18,10 @@ header{
 
 .Professional-summary
 {
-    background-color: lightgray;
+    background-color: #64c0e8;
+    border: 2px solid #d3ee7;
+    box-shadow: inset 3px 5px 5px rgba(0,0,0,.15), 10px 5px 5px rgba(0,0,0,.15);
+    border-radius: 10px
 }
 
 header h1{
@@ -43,6 +46,7 @@ header p {
 }
 
 .main-area{
+
     margin-bottom: 5px;
 }
 .main-area li{
@@ -57,9 +61,11 @@ header p {
 
 .Education
 {
-
+    background-color: #64c0e8;
+    border: 2px solid #d3ee7;
     margin-top: 70px;
-    background-color: lightgray;
+    box-shadow: inset 3px 5px 5px rgba(0,0,0,.15), 10px 5px 5px rgba(0,0,0,.15);
+        border-radius: 10px
 }
 
 .Group3
