@@ -23,3 +23,10 @@ html{
     box-sizing: border-box;
     font-size: 85%;
 }
+
+.boxstyle{
+  width: 320px;
+  padding: 40px;
+  border: 5px solid gray;
+  margin: 0;
+}
