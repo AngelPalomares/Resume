@@ -56,46 +56,61 @@
            <p>Week 10</p>
            <p>Present the project that I have been working on</p>
            </div>
-             
-             <blockquote>
+              
+  <h3>4/21/2022 <h3/>
+   <div class ="boxstyle">
+   <p>In todays daily blog I will be talking to you about the progress that I have made with the Vrchat clone. For starters I have succesfully implemented a keyboard into the game.
+       Why a keyboard you ask? Because I want people to be able to log in with whatever name they feel comfortable with, I have also added tha ability to log in annonymosly if they do
+       not want to name themselse.</p>
+       <p>The code that you see here is the code that I have used for when it comes to connecting to the online multiplayer. When starting the game you will have the ability to choose between
+       Logging in with a name or without a name. If the player chooses to log in with a name an if system was implemented so that they dont just leave it blank. Once the player finishes
+       choosing the way they want to log in, a function will be sent to photon to see if they are able to connect. Once connected it will load into their home scene where they will be able to pick
+       from a selection of avatars to worlds that were created. Those functions will be added later into the game.</p>
+
+  <blockquote>
   <pre>
     <code>
-           public void ConnectAnonymously()
+    public void JoinRandomRoom()
     {
-        PhotonNetwork.ConnectUsingSettings();
+        PhotonNetwork.JoinRandomRoom();
     }
 
-    public void ConnectToPhotonServer()
+    public override void OnJoinRandomFailed(short returnCode, string message)
     {
-        if(playername_Inputname.text != "")
-        {
-            Turnitoff.SetActive(false);
-            PhotonNetwork.NickName = playername_Inputname.text;
-            PhotonNetwork.ConnectUsingSettings();
-        }
-        else
-        {
-            Turnitoff.SetActive(true);
-            Testing.text = "Please Input a name";
-        }
-    }
-    #endregion
-
-    #region Photon Callback Methods
-    public override void OnConnected()
-    {
-        Debug.Log("OnConnected is called. The Server is available");
-        PhotonNetwork.LoadLevel("HomeScene");
+        Debug.Log(message);
+        CreateandJoinRoom();
     }
 
-    public override void OnConnectedToMaster()
+    public override void OnCreatedRoom()
     {
-        Debug.Log("Connected to Master Server with player name: " + PhotonNetwork.NickName);
+        Debug.Log("A room is created with the name" + PhotonNetwork.CurrentRoom.Name);
+    }
+
+    public override void OnJoinedRoom()
+    {
+        Debug.Log("The Local Player: " + PhotonNetwork.NickName + " joined to" + PhotonNetwork.CurrentRoom.Name + " Player count" + PhotonNetwork.CurrentRoom.PlayerCount);
+    }
+
+    public override void OnPlayerEnteredRoom(Player newPlayer)
+    {
+        Debug.Log("Player count: " + PhotonNetwork.CurrentRoom.PlayerCount);
+    }
+
+    private void CreateandJoinRoom()
+    {
+        string RandomRoomName = "Room_" + Random.RandomRange(0, 1000);
+        RoomOptions roomOptions = new RoomOptions();
+        roomOptions.MaxPlayers = 20;
+
+        PhotonNetwork.CreateRoom(RandomRoomName, roomOptions);
     }
     </code>
   </pre>
 </blockquote>
-                  
+       <p>So a little bit about the script that was posted above this paragraph. It allows the player to create their very own room, using the Photon framework. The only
+       downside for the free version is that you are limited to only about 20 players compared to other platforms that allow up to 100 players at once. Once succesfully
+       connected to the photon network it will create a room, if not then it will continue to work until connection is made</p>
+  </div> 
     <footer>
     <p>Author: Angel Palomares</p>
     </footer>
