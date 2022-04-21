@@ -60,7 +60,38 @@
              <blockquote>
   <pre>
     <code>
-        My pre-formatted "quoted" code here.
+           public void ConnectAnonymously()
+    {
+        PhotonNetwork.ConnectUsingSettings();
+    }
+
+    public void ConnectToPhotonServer()
+    {
+        if(playername_Inputname.text != "")
+        {
+            Turnitoff.SetActive(false);
+            PhotonNetwork.NickName = playername_Inputname.text;
+            PhotonNetwork.ConnectUsingSettings();
+        }
+        else
+        {
+            Turnitoff.SetActive(true);
+            Testing.text = "Please Input a name";
+        }
+    }
+    #endregion
+
+    #region Photon Callback Methods
+    public override void OnConnected()
+    {
+        Debug.Log("OnConnected is called. The Server is available");
+        PhotonNetwork.LoadLevel("HomeScene");
+    }
+
+    public override void OnConnectedToMaster()
+    {
+        Debug.Log("Connected to Master Server with player name: " + PhotonNetwork.NickName);
+    }
     </code>
   </pre>
 </blockquote>
