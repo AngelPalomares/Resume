@@ -67,6 +67,46 @@
        choosing the way they want to log in, a function will be sent to photon to see if they are able to connect. Once connected it will load into their home scene where they will be able to pick
        from a selection of avatars to worlds that were created. Those functions will be added later into the game.</p>
 
+         <blockquote>
+  <pre>
+    <code>
+    public void ConnectAnonymously()
+    {
+        PhotonNetwork.ConnectUsingSettings();
+    }
+
+    public void ConnectToPhotonServer()
+    {
+        if(playername_Inputname.text != "")
+        {
+            Turnitoff.SetActive(false);
+            PhotonNetwork.NickName = playername_Inputname.text;
+            PhotonNetwork.ConnectUsingSettings();
+        }
+        else
+        {
+            Turnitoff.SetActive(true);
+            Testing.text = "Please Input a name";
+        }
+    }
+    #endregion
+
+    #region Photon Callback Methods
+    public override void OnConnected()
+    {
+        Debug.Log("OnConnected is called. The Server is available");
+        PhotonNetwork.LoadLevel("HomeScene");
+    }
+
+    public override void OnConnectedToMaster()
+    {
+        Debug.Log("Connected to Master Server with player name: " + PhotonNetwork.NickName);
+    }
+
+    </code>
+  </pre>
+</blockquote>
+       
   <blockquote>
   <pre>
     <code>
