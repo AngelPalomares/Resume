@@ -167,6 +167,18 @@
               <p><a href="https://styloo.itch.io/village">Village Assets that is being used</a></p>
               <p><a href="https://fertile-soil-productions.itch.io/modular-village-pack">Modular Village Pack</a></p>
            </div>
+              
+           <h3>4/27/2022 <h3/>
+          <div class ="boxstyle">
+              <p>So for todays blog I will be talking about the updates that I have made for the game. Currently with the build that I have made so far, it has allowed me to create worlds
+              where players are able to join in. In the home menu of the game you can see the amount of players that are in that specific room. So lets say before you enter you will see that
+              it says 0/20 but once someone enters that specific lobby it will change that counter to 1 telling to you that someone is inside that room.</p>
+              <p>I have stumbled into some difficulties today, for starters the worlds were not connecting to the proper worlds and they werent updating as they should. The number for
+              how mnay players were currently in the world was stuck at zero. After 2 hours of debugging the mistake that was causing that error was that a function was not being called properly. The function
+              that was preventing things to work properly is called OnConnectedToMaster. This function in particular grabs the name of the player that is placed by them in the login scene, after that it grabs their name
+              and moves them into the main hub. But I made the mistake on placing the PhotonNetwork.LoadLevel("HomeScene"); on onconnected instead of onconnectedtomaster since this function
+              calls the main server and if connected successfully transports them to the main hub.</p>
+           </div>
          
          
 <script src="https://giscus.app/client.js"
