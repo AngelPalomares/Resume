@@ -40,7 +40,54 @@
                When it comes to the pros and cons I will be talking about it more in detail for the week 7 update</p>
               <p>I have also taken into consideration other text to speech software but once again I will be talking about then in the week 7 update.</p>
            </div>  
+          <h3>Week 7<h3/>
+          <div class ="boxstyle">
+              <p>Hello yall time for a week 7 update. Today I will be talking about the things that I have accomplished, as well as the failures that have occured for this upcoming week.</p>
+              <p>For starters lets talk about the accomplishments/updates that were made when it came to the creation of the virtual reality world. In the previous weeckly schedule I have talked about the implementation
+               of avatars as well as a few bug fixes when it came to the backend of the game. There was an advanvement in that. Not only was I able to get the avatar selection to work properly, the implementation of people being able 
+              to see the different kinds of avatars was also succesful. By that I mean that when you select the character that you wanted, it will send a signal to photon about said character and return it to the rest who are connected.</p>
+              <p>Another advancement was the implementation of text to speech. Using the virtual keyboard players are able to input a message and be able to press a button allowing them to talk to randoms without the need of using their voice. There is 
+              a slight hiccup to that. What I mean by that it works properly when it is connected to the computer. But once I create the APK and place it unto my oculus the text to speech would not work at all. It works
+               fine when it is connected directly to the compute but not on the oculus which I find to be a bit weird. But I will look into this issue for this upcoming week, since I find it cool 
+              to use the text to speech.</p>
               
+              <p>Now for the technologies that I have looked upon for this past week<p>
+              
+              <p><a href="https://github.com/simplygamedev/UnityTTSEngine">UnityTTSEngine</a><p>
+              
+              <p>UnityTTSEngine is a Text to speech program that allows the user to input a text and have the for the phone/computer to output that text for the others to hear. 
+              After countless of hours trying to get this program, unfortunetly I was not able to. No matter how many times I input the text and pressed the button to output the text. I was not able to make it work 
+              properly, even after reading the documentation it was still a failure</p>
+              <p>Pros : Having the ability to type out the text and have it be spoken rather than the person speaking it.</p>
+              <p>Cons : Not being able to make it work properly, after reading the documentation and looking into the code.</p>
+              
+              <img src="TTSEngine.png" alt="TTSEngine" style="width:80%"
+              
+              <p><a href="https://github.com/j1mmyto9/Speech-And-Text-Unity-iOS-Android">Speech and Text Unity IOS Android</a><p>
+              <p>Another Android Text To Speech that was recommended to me. This little text to speech looked amazing at first glance, it has the ability to talk in Endlish,
+               Korean, French, and Dutch. I tried to get it to work in unity but nothing came off it. I have also tried to create an android apk to see if it would work under mobile devices but to my surprise it would give me 
+              a error preventing me from creating a APK. I have also tried using Unity Remote 5 but no matter what was done, my phone was not able to connect to unity.</p>
+              <p>Pros: The ability of the program having it different languages from the start is pretty cool.</p>
+              <p>Cons: Was not able to make it work. Unity Remote 5 not working properly.</p>
+              
+              <img src="SampleSpeechToText.png" alt="SampleSpeechToText" style="width:80%"
+              <p><a href="https://github.com/keijiro/UnityRustTts">UnityRustTts</a></p>
+              <p>Last but not least I will be talking about Unity Rust TTS. Unlike the rest, this was the one that I was able to succesfully implemented into the virtual reality game.
+               The way this program works is that you input a string of text into the box and from there you press the speak button to have the computer speak out the sentence that you have written.
+              Rust TTS was built on a newer version of unity but to my surprise after rolling it back to the unity version that I needed it to be on, it still worked the way that it should have 
+              after learning that the decision was made to have imported into the project that is currently being worked on. I havd to do a couple of tweaking in the source code to make it work properly and once I did that it ran well. 
+              I had to change the input from regular text to text mesh pro since the original was asking for a regular string of text. But once that was implemented it was good to go. Like I said earlier in my post that it runs
+               amazingly well on a windows platform but exporting it to an oculus build of it, the text to speech would not work properly.</p>
+              <p>pros: Simple text to speech program</p>
+              <p>coms: having issues making it work in oculus</p>
+              <img src="Rust.png" alt="Rust" style="width:80%"
+                   
+              <p>This is what will be worked on for the next upcoming weeks</p>
+              <p>week 8 : Implementation of Photon Voice and getting the text to speech to work properly</p>
+              <p>Week 9 : Bug fixes</p>
+              <p>Week 10 : Present</p>
+              <p>Video will be up shortle</p>
+           </div>  
                
          
 <script src="https://giscus.app/client.js"
