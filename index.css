@@ -20,9 +20,9 @@ header{
 {
     color: #856d8d; /* Complementary color to light blue */
     border: 3px solid #856d8d;
-    margin-top: 20px;
+    margin-top: 25px;
     box-shadow: inset 3px 5px 5px rgba(0,0,0,.15), 10px 5px 5px rgba(0,0,0,.15);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 header h1{
@@ -64,9 +64,9 @@ header p {
 {
     color: #856d8d; /* Complementary color to light blue */
     border: 3px solid #856d8d;
-    margin-top: 20px;
+    margin-top: 25px;
     box-shadow: inset 3px 5px 5px rgba(0,0,0,.15), 10px 5px 5px rgba(0,0,0,.15);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .Group3
