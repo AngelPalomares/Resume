@@ -22,7 +22,7 @@ header{
     border: 3px solid #856d8d;
     margin-top: 70px;
     box-shadow: inset 3px 5px 5px rgba(0,0,0,.15), 10px 5px 5px rgba(0,0,0,.15);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 header h1{
@@ -66,7 +66,7 @@ header p {
     border: 3px solid #856d8d;
     margin-top: 70px;
     box-shadow: inset 3px 5px 5px rgba(0,0,0,.15), 10px 5px 5px rgba(0,0,0,.15);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .Group3
