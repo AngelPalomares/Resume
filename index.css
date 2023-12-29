@@ -18,8 +18,8 @@ header{
 
 .Professional-summary
 {
-    background-color: #64c0e8;
-    border: 2px solid #d3ee7;
+    color: #856d8d; /* Complementary color to light blue */
+    border: 3px solid #856d8d;
     box-shadow: inset 3px 5px 5px rgba(0,0,0,.15), 10px 5px 5px rgba(0,0,0,.15);
     border-radius: 10px
 }
@@ -103,7 +103,7 @@ header p {
 
 .site a{
     display: inline;
-    color: lightpink;
+    color: sandybrown;
     text-decoration: none;
     padding: 10px 10px;
     border: 3px solid snow;
