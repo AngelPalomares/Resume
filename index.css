@@ -86,30 +86,31 @@ header p {
 }
 
 
-/* Site Navigation*/
-.site li
-{
+/* Site Navigation */
+.site li {
     list-style: none;
     float: left;
     margin-right: 10px;
 }
-.site ul{
+
+.site ul {
     margin: 0;
     padding: 0;
 }
 
-.site{
+.site {
     margin-top: 20px;
 }
 
-.site a{
-    display: inline;
+.site a {
+    display: inline-block; /* Changed to block for proper styling */
     color: sandybrown;
     text-decoration: none;
     padding: 10px 10px;
-    border: 10px sandybrown;
+    border: 2px solid sandybrown; /* Adjust the width and style as needed */
 }
 
-.site a:hover{
+.site a:hover {
     background-color: red;
 }
+
