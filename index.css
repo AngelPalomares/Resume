@@ -16,13 +16,22 @@ header{
     color: black;
 }
 
-.Professional-summary
-{
-    color: #856d8d; /* Complementary color to light blue */
-    border: 3px solid #856d8d;
+.Professional-summary {
+    background-color: #64c0e8;
+    border: 2px solid #d3ee7;
     box-shadow: inset 3px 5px 5px rgba(0,0,0,.15), 10px 5px 5px rgba(0,0,0,.15);
-    border-radius: 10px
+    border-radius: 10px;
+    text-align: center; 
+    margin: 0 auto; 
+    padding: 20px; 
 }
+
+.Professional-summary h1 {
+    color: #fff; 
+    font-size: 24px; 
+    margin: 0; 
+}
+
 
 header h1{
     margin: 0;
