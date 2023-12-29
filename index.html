@@ -28,7 +28,7 @@
                     <lu>Resume</lu>
                 </ul>
             </nav>
-        <nav class="site">
+<nav class="site">
     <ul>
         <li><a href="About.html">About</a></li>
         <li><a href="https://github.com/AngelPalomares" target="_blank">Portfolio</a></li>
@@ -41,14 +41,14 @@
 <script>
     // Add event listeners for interactivity
     document.addEventListener("DOMContentLoaded", function () {
-        // Hover effect
+        // Add hover effect with scaling
         var links = document.querySelectorAll('.site ul li a');
         links.forEach(function(link) {
             link.addEventListener("mouseover", function() {
-                this.style.color = "#3366cc"; // Change to the desired hover color
+                this.style.transform = "scale(1.1)"; // Scale up by 10%
             });
             link.addEventListener("mouseout", function() {
-                this.style.color = ""; // Reset to default color on mouseout
+                this.style.transform = ""; // Reset to default size on mouseout
             });
         });
 
@@ -69,6 +69,7 @@
         });
     });
 </script>
+
 
     </header>
 
