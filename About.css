@@ -12,7 +12,9 @@ html {
 
     box-sizing: border-box;
 }
-
+.HeaderBox{
+    border-bottom: 3px solid black;
+}
 .sidebar {
     width: 100%;
     background-color: white;
