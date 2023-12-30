@@ -1,58 +1,67 @@
-html{
+html {
     background-color: #DFCFBE;
 }
-.container{
-    max-width: 1000px;
+
+.container {
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    padding-left: 40px;
-    padding-right: 40px;
-
+    padding-left: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
 }
 
-.sidebar{
- width: 34%;
-    float: right;
+.sidebar {
+    width: 100%;
     background-color: white;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     box-sizing: border-box;
     font-size: 85%;
 }
 
-.boxstyle{
+.boxstyle {
     background-color: #e5e9dc;
-    padding-top: auto;
-    padding-bottom: auto;
+    padding: 10px;
     box-sizing: border-box;
     font-size: 85%;
-    
- .column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
 }
-  pre{
-  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  margin-bottom: 10px;
-  overflow: auto;
-  width: auto;
-  padding: 5px;
-  background-color: #eee;
-  width: 650px!ie7;
-  padding-bottom: 20px!ie7;
-  max-height: 600px;
+
+.column {
+    width: 100%;
+    padding: 5px;
+}
+
+pre {
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    margin-bottom: 10px;
+    overflow: auto;
+    width: auto;
+    padding: 5px;
+    background-color: #eee;
+    width: 100%;
+    padding-bottom: 20px;
+    max-height: 600px;
 }
 
 /* Clearfix (clear floats) */
 .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
-    
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .sidebar,
+    .boxstyle {
+        width: 100%;
+        padding: 10px;
+    }
 }
+
