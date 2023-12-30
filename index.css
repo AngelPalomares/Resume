@@ -18,7 +18,7 @@ header{
 
 .image-container {
     padding-top: 30px;
-    padding-bottom: 300px;
+    padding-bottom: 30px;
     text-align: center;
 }
 
@@ -129,6 +129,7 @@ header p {
     text-decoration: none;
     padding: 10px 10px;
     border: 2px solid sandybrown; /* Adjust the width and style as needed */
+    padding-bottom: 10px;
 }
 
 .site a:hover {
