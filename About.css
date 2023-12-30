@@ -91,6 +91,16 @@ header {
     background-color: red;
 }
 
+.Professional-summary
+{
+    color: #856d8d; /* Complementary color to light blue */
+    border: 3px solid #856d8d;
+    margin-top: 40px;
+    box-shadow: inset 3px 5px 5px rgba(0,0,0,.15), 10px 5px 5px rgba(0,0,0,.15);
+    border-radius: 10px;
+    text-align: center;
+}
+
 /* Media Query for smaller screens */
 @media only screen and (max-width: 600px) {
     .container {
