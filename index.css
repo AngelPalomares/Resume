@@ -16,6 +16,10 @@ header{
     color: black;
 }
 
+.image-container {
+    text-align: center;
+}
+
 .Professional-summary
 {
     color: #856d8d; /* Complementary color to light blue */
