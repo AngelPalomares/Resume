@@ -1,6 +1,10 @@
 html {
     background-color: #DFCFBE;
 }
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 87%;
+}
 
 .container {
     max-width: 1000px;
