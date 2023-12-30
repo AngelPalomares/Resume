@@ -44,7 +44,7 @@ pre {
     max-height: 600px;
 }
 
-header{
+header {
     padding-top: 20px;
     padding-bottom: 10px;
     color: black;
@@ -55,6 +55,11 @@ header{
     content: "";
     clear: both;
     display: table;
+}
+
+/* Center the image */
+.image-container {
+    text-align: center;
 }
 
 /* Site Navigation */
@@ -74,11 +79,11 @@ header{
 }
 
 .site a {
-    display: inline-block; /* Changed to block for proper styling */
+    display: inline-block;
     color: sandybrown;
     text-decoration: none;
     padding: 10px 10px;
-    border: 2px solid sandybrown; /* Adjust the width and style as needed */
+    border: 2px solid sandybrown;
 }
 
 .site a:hover {
