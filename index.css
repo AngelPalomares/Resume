@@ -127,7 +127,7 @@ header p {
     display: inline-block; /* Changed to block for proper styling */
     color: sandybrown;
     text-decoration: none;
-    padding: 10px 10px;
+    padding: 10px 15px;
     border: 2px solid sandybrown; /* Adjust the width and style as needed */
     padding-bottom: 10px;
 }
