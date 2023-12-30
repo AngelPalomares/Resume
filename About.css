@@ -51,6 +51,34 @@ pre {
     display: table;
 }
 
+/* Site Navigation */
+.site li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.site ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site {
+    margin-top: 20px;
+}
+
+.site a {
+    display: inline-block; /* Changed to block for proper styling */
+    color: sandybrown;
+    text-decoration: none;
+    padding: 10px 10px;
+    border: 2px solid sandybrown; /* Adjust the width and style as needed */
+}
+
+.site a:hover {
+    background-color: red;
+}
+
 /* Media Query for smaller screens */
 @media only screen and (max-width: 600px) {
     .container {
