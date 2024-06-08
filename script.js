@@ -1,17 +1,25 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndexes = {};
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+function initSlideshow(slideshowClass) {
+    slideIndexes[slideshowClass] = 1;
+    showSlides(1, slideshowClass);
 }
 
-function showSlides(n) {
+function plusSlides(n, slideshowClass) {
+    showSlides(slideIndexes[slideshowClass] += n, slideshowClass);
+}
+
+function showSlides(n, slideshowClass) {
     let i;
-    let slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = slides.length}
+    let slides = document.getElementsByClassName("mySlides " + slideshowClass);
+    if (n > slides.length) {slideIndexes[slideshowClass] = 1} 
+    if (n < 1) {slideIndexes[slideshowClass] = slides.length}
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none"; 
     }
-    slides[slideIndex-1].style.display = "block"; 
+    slides[slideIndexes[slideshowClass] - 1].style.display = "block"; 
 }
+
+// Initialize each slideshow
+initSlideshow('super-simon');
+initSlideshow('evergreen');
