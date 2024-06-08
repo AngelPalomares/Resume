@@ -7,8 +7,9 @@
     <title>
         Angel Palomares Projects
     </title>
-     <link rel='stylesheet' href="index.css">
-    <link rel="stylesheet" href="styles.css">
+        <link rel='stylesheet' href="index.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="Button.css">
 </head>
 
 <body>
@@ -132,6 +133,13 @@
         <li>Introduced an overworld mechanic, granting players the ability to navigate and choose the next level they wish to play.</li>
         <li>Incorporated a two-player feature into the game, allowing two individuals to participate simultaneously.</li>
         <p><a href="SS3D.html">Playable Demo!</a></p>
+        <button id="myButton">Play Me!</button>
+
+        <script>
+            document.getElementById('myButton').addEventListener('click', function() {
+                window.location.href = 'SS3D.html';
+            });
+        </script>
             <div class="slideshow-container">
         <div class="mySlides fade">
             <img src="SuperSimon3DWorldImages/Screenshot 2024-06-08 at 1.54.39 PM.png" style="width:100%">
