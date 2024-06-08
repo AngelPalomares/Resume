@@ -6,9 +6,18 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px #0056b3, 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
     background-color: #0056b3;
+    box-shadow: 0 2px #0056b3, 0 4px 4px rgba(0, 0, 0, 0.1);
 }
+
+button:active {
+    background-color: #004080;
+    box-shadow: 0 2px #003366, 0 2px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(3px);
+}
+
