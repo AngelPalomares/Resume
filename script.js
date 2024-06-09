@@ -25,3 +25,4 @@ initSlideshow('super-simon');
 initSlideshow('evergreen');
 initSlideshow('Tec');
 initSlideshow('First');
+initSlideshow('SpaceAlpha');
