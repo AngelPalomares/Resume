@@ -24,3 +24,4 @@ function showSlides(n, slideshowClass) {
 initSlideshow('super-simon');
 initSlideshow('evergreen');
 initSlideshow('Tec');
+initSlideshow('First');
