@@ -1,18 +1,18 @@
 /* Style for the buttons */
 button.openBtn, .button-container button {
-    background-color: peachpuff;
-    color: white;
+    background-color: #FFDAB9; /* PeachPuff color */
+    color: black; /* Dark text for better visibility */
     padding: 10px 20px;
     margin: 10px;
-    border: none;
+    border: 2px solid black; /* Adding a black border for better definition */
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Black outline */
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; /* White outline for better text visibility */
 }
 
 button.openBtn:hover, .button-container button:hover {
-    background-color: #f5b7b1;
+    background-color: #F5B7B1; /* Slightly darker peach for hover effect */
 }
 
 /* Style for the modal */
