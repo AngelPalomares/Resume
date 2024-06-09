@@ -1,17 +1,20 @@
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("openBtn");
+// Get the buttons that open the modal
+var buttons = document.querySelectorAll(".openBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal and load the webpage
-btn.onclick = function() {
-    document.getElementById("webpageFrame").src = "https://www.angelmartinpalomares.com/"; // Change this to the desired URL
-    modal.style.display = "block";
-}
+// When the user clicks any button, open the modal and load the webpage
+buttons.forEach(function(button) {
+    button.onclick = function() {
+        var url = this.getAttribute("data-url");
+        document.getElementById("webpageFrame").src = url;
+        modal.style.display = "block";
+    }
+});
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
