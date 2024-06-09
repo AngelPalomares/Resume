@@ -23,4 +23,4 @@ function showSlides(n, slideshowClass) {
 // Initialize each slideshow
 initSlideshow('super-simon');
 initSlideshow('evergreen');
-
+initSlideshow('Tec');
