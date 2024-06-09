@@ -9,7 +9,7 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal and load the webpage
 btn.onclick = function() {
-    document.getElementById("webpageFrame").src = "https://www.angelmartinpalomares.com/"; // Change this to the desired URL
+    document.getElementById("webpageFrame").src = "https://www.angelmartinpalomares.com/index.html"; // Change this to the desired URL
     modal.style.display = "block";
 }
 
