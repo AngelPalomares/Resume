@@ -1,14 +1,14 @@
 /* Style for the buttons */
 button.openBtn, .button-container button {
     background-color: #FFDAB9; /* PeachPuff color */
-    color: black; /* Dark text for better visibility */
+    color: #333333; /* Dark gray text for better visibility */
     padding: 10px 20px;
     margin: 10px;
     border: 2px solid black; /* Adding a black border for better definition */
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; /* White outline for better text visibility */
+    text-shadow: none; /* Removing text shadow for clarity */
 }
 
 button.openBtn:hover, .button-container button:hover {
