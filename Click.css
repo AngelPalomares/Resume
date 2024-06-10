@@ -22,29 +22,13 @@ button.openBtn:hover, .button-container button:hover {
     z-index: 1; /* Sit on top */
     left: 50%; /* Center horizontally */
     top: 50%; /* Center vertically */
-    width: 0; /* Start small */
-    height: 0; /* Start small */
+    width: 80%; /* Expand width */
+    height: 80%; /* Expand height */
     overflow: hidden; /* Hide overflow */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     transform: translate(-50%, -50%); /* Center transformation */
-    transition: width 0.5s, height 0.5s, opacity 0.5s; /* Animation */
-    opacity: 0;
-}
-
-/* Show modal with animation */
-.modal.opening {
-    display: block;
-    width: 80%; /* Expand width */
-    height: 80%; /* Expand height */
     opacity: 1;
-}
-
-/* Closing animation */
-.modal.closing {
-    width: 0;
-    height: 0;
-    opacity: 0;
 }
 
 /* Modal Content */
@@ -81,5 +65,3 @@ iframe {
     height: 100%;
     border: none;
 }
-
-
