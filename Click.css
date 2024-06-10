@@ -20,39 +20,38 @@ button.openBtn:hover, .button-container button:hover {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    left: 50%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    width: 0; /* Start small */
+    height: 0; /* Start small */
+    overflow: hidden; /* Hide overflow */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-    opacity: 0;
-    transform: scale(0.7);
-    transition: opacity 0.5s, transform 0.5s; /* Animation */
+    transform: translate(-50%, -50%); /* Center transformation */
+    transition: width 0.5s, height 0.5s; /* Animation for width and height */
 }
 
 /* Show modal with animation */
 .modal.opening {
     display: block;
-    opacity: 1;
-    transform: scale(1);
+    width: 80%; /* Expand width */
+    height: 80%; /* Expand height */
 }
 
+/* Closing animation */
 .modal.closing {
-    opacity: 0;
-    transform: scale(0.7);
+    width: 0;
+    height: 0;
 }
 
 /* Modal Content */
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto;
+    margin: 0; /* No margin for the expanding box */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
