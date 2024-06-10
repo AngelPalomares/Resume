@@ -11,8 +11,14 @@ var span = document.getElementsByClassName("close")[0];
 buttons.forEach(function(button) {
     button.onclick = function() {
         var url = this.getAttribute("data-url");
-        document.getElementById("webpageFrame").src = url;
-        modal.style.display = "block";
+        
+        // Check if the URL is for GitHub or LinkedIn
+        if (url.includes("github.com") || url.includes("linkedin.com")) {
+            window.open(url, '_blank'); // Open in a new tab
+        } else {
+            document.getElementById("webpageFrame").src = url;
+            modal.style.display = "block";
+        }
     }
 });
 
