@@ -8,20 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
     function openModal(url) {
         iframe.src = url;
         modal.style.display = "block";
-        setTimeout(function() {
-            modal.classList.add("opening");
-            modal.classList.remove("closing");
-        }, 10); // Small delay to ensure the display block is applied
     }
 
     // Function to close the modal
     function closeModal() {
-        modal.classList.remove("opening");
-        modal.classList.add("closing");
-        setTimeout(function() {
-            modal.style.display = "none";
-            iframe.src = ""; // Clear the iframe src to stop loading the page
-        }, 500); // Match this to the transition duration
+        modal.style.display = "none";
+        iframe.src = ""; // Clear the iframe src to stop loading the page
     }
 
     // When the user clicks any button, open the modal and load the webpage
