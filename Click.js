@@ -7,9 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to open the modal
     function openModal(url) {
         iframe.src = url;
-        modal.classList.add("opening");
-        modal.classList.remove("closing");
         modal.style.display = "block";
+        setTimeout(function() {
+            modal.classList.add("opening");
+            modal.classList.remove("closing");
+        }, 10); // Small delay to ensure the display block is applied
     }
 
     // Function to close the modal
