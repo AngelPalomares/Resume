@@ -27,3 +27,4 @@ initSlideshow('Tec');
 initSlideshow('First');
 initSlideshow('SpaceAlpha');
 initSlideshow('Alcohol');
+initSlideshow('TreeStump');
