@@ -28,3 +28,4 @@ initSlideshow('First');
 initSlideshow('SpaceAlpha');
 initSlideshow('Alcohol');
 initSlideshow('TreeStump');
+initSlideshow('OpenGL');
